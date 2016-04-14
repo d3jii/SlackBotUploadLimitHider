@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Slack Upload Limit Hider",
+  "description": "Remove upload limit slackbot messages",
+  "version": "1.0.1",
+  "permissions": ["tabs", "*://*.slack.com/*"],
+  "devtools_page": "popup.html",
+  "content_scripts": [
+    {
+      "matches": ["*://*.slack.com/*"],
+      "js": ["myscript.js"]
+    }
+  ] 
+}
